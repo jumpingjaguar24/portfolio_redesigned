@@ -1,0 +1,338 @@
+@import url('common.css');
+
+body {
+    grid-template-rows: 
+    auto /* nav */
+    auto   /* header */
+    auto /* waves */
+    repeat(4, minmax(400px, auto)) /* portfolio items */
+    auto; /* footer */
+}
+
+
+/* header section */
+
+header {
+    margin-top: 2rem;
+    grid-column: 2 / 3; /* middle column */
+    grid-row: 2 / 3;    /* first row */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+/* intro text */
+
+header .intro-text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+/* 
+    display: flex;
+    flex-direction: column; */
+    align-content: center; 
+    height: 100%; 
+}
+
+header .intro-text h1 span {
+    font-size:larger;
+    color: var(--primary-color);
+
+}
+
+/* intro image */
+
+header .intro-image-container {
+    grid-column:  2 / 3;
+    grid-row: 1 / 2;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    overflow: visible;
+}
+
+
+.icon:hover svg path{
+    fill: var(--primary-color);
+}
+/* down arrow */
+
+.arrow-container {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-container svg{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    transition: transform .2s ease;  
+
+}
+
+.arrow-container svg path{
+    transition: fill .2s ease;  
+}
+
+.arrow-container svg:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.arrow-container svg:hover path{
+    fill: var(--primary-color);
+}
+
+/* waves */
+
+.wave-container {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    display: flex;
+}
+
+.wave-container .waves {
+    width: 100%;
+    height: 25vh;
+    min-height: 250px;
+    max-height: 400px;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+/* portfolio previews */
+
+.portfolio-item {
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#item-1 {
+    background-color: #436cfe;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+}
+
+#item-1 .portfolio-text {
+    color: var(--lightest);
+}
+
+#item-2 {
+    background-color: #49bd01;
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+
+#item-2 .portfolio-text {
+    color: var(--lightest);
+}
+
+
+#item-3 {
+    background-color: #c400e6;
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+}
+
+#item-3 .portfolio-text {
+    color: white;
+}
+
+
+#item-4 {
+    background-color: #fc1a21;
+    grid-column: 1 / 4;
+    grid-row: 7 / 8;
+}
+
+#item-4 .portfolio-text {
+    color: white;
+}
+
+.portfolio-text {
+    padding: 0 5rem;
+    position: relative;
+    display: inline;
+    z-index: 1;
+}
+
+.portfolio-image-container {
+    width: 100%;
+    max-width: 500px;
+    height: 40vw;
+    max-height: 400px;
+    min-height: 200px;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.portfolio-link {
+    display: flex;
+    align-items: center;
+}
+
+
+.portfolio-link a {
+    text-decoration: none;
+    color: black;
+    transition: color .2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.portfolio-link svg {
+    transition: transform .2s ease-in-out;
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.portfolio-link path {
+    transition: fill .2s ease-in-out;
+}
+
+.portfolio-link:hover a{
+    color: var(--lightest);
+}
+
+.portfolio-link:hover svg {
+    transform: translate(10px);
+}
+
+.portfolio-link:hover path {
+    fill: var(--lightest);
+}
+
+.main-text {
+    margin-bottom: 20px;
+}
+
+.main-text a {
+    color: var(--lightest);
+}
+/* footer */
+
+.footer {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        grid-template-columns: 5rem auto 5rem; /* left margin, content, right margin */
+        grid-template-rows: 
+        90px /* nav */
+        auto   /* header */
+        auto /* waves */
+        repeat(4, minmax(400px, auto)) /* portfolio items */
+        auto; /* footer */
+    }
+
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+  header .intro-image-container {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio-image-container {
+    height: 60vw;
+    min-height: 150px;
+    max-height: 300px;
+  }
+  .portfolio-text {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+    /* Always preserve 5rem margins */
+      body {
+        grid-template-columns: 5rem auto 5rem 
+      }
+      
+      header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        row-gap: 5rem;
+      }
+
+      /* Hide intro-image-container on screens <1000px */
+      .intro-image-container {
+        display: none;
+      }
+
+      .wave-container .waves {
+        height: 15vh;
+        min-height: 100px;
+        max-height: 300px;
+    }
+
+      /* Responsive portfolio items */
+      .portfolio-item {
+        flex-direction: column;
+        align-items: stretch;
+        max-height: none;
+        padding: 2rem 0;
+      }
+      .portfolio-image-container {
+        width: 100%;
+        height: 30vw;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 400px;
+      }
+
+      .portfolio-text {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem;
+        font-size: 1.1rem;
+        box-sizing: border-box;
+        text-align: left;
+      }
+
+}

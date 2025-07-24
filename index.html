@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8">
+        <title>Joseph Pate</title>
+        <link rel="icon" type="image/x-icon" href="/icons/hand.png">
+        <link rel="stylesheet" type="text/css" href="common.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="text/javascript" src="./app.js"></script>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.155.0/examples/jsm/"
+              }
+            }
+          </script>
+    </head>
+    <body>
+        <nav id="main-nav">
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-list">
+                &#9776;
+            </button>
+            <ul id="nav-list">
+                <li class="name-item">
+                    <strong><a class="name" href="#">Joseph Pate</a></strong>
+                </li>
+                <li><a class="nav-item selected" href="index.html">work</a></li>
+                <li><a class="nav-item" href="about.html">about</a></li>
+                <li><a class="nav-item" href="./resume.pdf">resume</a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div  class="intro-text">
+                <h1> 
+                    <span> Hi, I'm Joe. </span><br> 
+                    I am a full-stack engineer and UI/UX designer shooting for the stars!<br>
+                </h1>
+            </div>
+                <div class="intro-image-container"
+                    data-model="/glb/rocket.glb" 
+                    data-camera="0,0,6"
+                    data-model-position="0,-.5,0"
+                    data-model-scale="1,1,1"
+                    data-light-intensity="4"
+                    data-spin-speed="0.03"
+                    aria-label="3D rocket model">
+                </div>
+            <div class="arrow-container">
+                <a href="#item-1" aria-label="arrow button to first portfolio item">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4198 0.451987L12.4798 1.51299L6.70277 7.29199C6.6102 7.38514 6.50012 7.45907 6.37887 7.50952C6.25762 7.55997 6.12759 7.58594 5.99627 7.58594C5.86494 7.58594 5.73491 7.55997 5.61366 7.50952C5.49241 7.45907 5.38233 7.38514 5.28977 7.29199L-0.490234 1.51299L0.569766 0.452987L5.99477 5.87699L11.4198 0.451987Z" fill="black"/>
+                    </svg>
+                </a>     
+            </div>
+        </header>
+
+        <div class="wave-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+        </div>
+
+            <div id="item-1" class="portfolio-item" >
+                <h2 class="portfolio-text">
+                    <div class="main-text">
+                    A website redesign for the <a href="https://www.ncwsma.org/">Nursing Council on Workforce Sustainability</a> I prototyped and built as a 
+                    contractor for ForHealth Consulting<br>
+                    </div>
+                    <span class="portfolio-link">
+                        <a href="portfolio_item_1.html">check it out here
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.500063 6.00006H12.0861L7.58606 1.50006L9.00006 0.0860596L15.9141 7.00006L9.00006 13.9141L7.58606 12.5001L12.0861 8.00006H0.500063V6.00006Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h2>
+                <div 
+                    class="portfolio-image-container" 
+                    data-model="/glb/laptop.glb" 
+                    data-camera="0,5,40"
+                    data-model-position="0,-5,0"
+                    data-model-scale="1,1,1"
+                    data-light-intensity="5"
+                    data-spin-speed="0.01"
+                    aria-label="3D fire extinguisher model">
+                </div>
+            </div >
+            <div id="item-2" class="portfolio-item" >
+                <h2 class="portfolio-text">
+                    <div class="main-text">
+                        A project based on exploring themes of usability in a
+                        pre-existing website and redesigning it<br>
+                    </div>
+                    <span class="portfolio-link">
+                        <a href="portfolio_item_2.html">check it out here
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.500063 6.00006H12.0861L7.58606 1.50006L9.00006 0.0860596L15.9141 7.00006L9.00006 13.9141L7.58606 12.5001L12.0861 8.00006H0.500063V6.00006Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h2>
+                <div 
+                    class="portfolio-image-container" 
+                    data-model="/glb/hammer.glb"
+                    data-camera="0,2,5"
+                    data-model-position="0,0,0"
+                    data-model-scale="1,1,1"
+                    data-light-intensity="3"
+                    data-spin-speed="0.01" 
+                    aria-label="3D hammer model">
+                </div>
+                
+            </div >
+            <div id="item-3" class="portfolio-item" >
+                <h2 class="portfolio-text">
+                    <div class="main-text">
+                    A project that investigates the process of iterative design to develop
+                    hi-fi mockups of an app for a company called <a href="https://cinapse.io/">Cinapse</a> <br>
+                    </div>
+                    <span class="portfolio-link" >
+                        <a href="portfolio_item_3.html">check it out here
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.500063 6.00006H12.0861L7.58606 1.50006L9.00006 0.0860596L15.9141 7.00006L9.00006 13.9141L7.58606 12.5001L12.0861 8.00006H0.500063V6.00006Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h2>
+                <div 
+                    class="portfolio-image-container" 
+                    data-model="/glb/camera.glb" 
+                    data-camera="0,1,18"
+                    data-model-position="0,-1,0"
+                    data-model-scale="1,1,1"
+                    data-light-intensity="3"
+                    data-spin-speed="0.01"
+                    aria-label="3D camera model">
+                </div>
+            </div >
+            <div id="item-4" class="portfolio-item" >
+                <h2 class="portfolio-text">
+                    <div class="main-text">
+                        A personas and storyboarding assignment that explores a fire extinguisher as a user interface<br>
+                    </div>
+                    <span class="portfolio-link">
+                        <a href="portfolio_item_4.html">check it out here
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.500063 6.00006H12.0861L7.58606 1.50006L9.00006 0.0860596L15.9141 7.00006L9.00006 13.9141L7.58606 12.5001L12.0861 8.00006H0.500063V6.00006Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h2>
+                <div 
+                    class="portfolio-image-container" 
+                    data-model="/glb/fire_extinguisher.glb" 
+                    data-camera="0,3,20"
+                    data-model-position="0,-3,0"
+                    data-model-scale="1,1,1"
+                    data-light-intensity="2.5"
+                    data-spin-speed="0.01"
+                    aria-label="3D rocket model">
+                </div>
+                
+            </div >
+
+        <nav class="footer">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a class="nav-item" href="#">Back to top</a>
+                </li>
+                <li class="footer-item">
+                    <a class="nav-item" href="https://www.linkedin.com/in/joseph-pate-6636461aa/">LinkedIn</a>
+                </li>
+                <li class="footer-item">
+                    <a class="nav-item" href="mailto:joseph_pate@alumni.brown.edu">Contact me</a>
+                </li>
+            </ul>
+            <p id="copyright"> © 2022 by Joseph Pate</p>
+        </nav>
+    </body>
+    <!-- Three.js and GLTFLoader -->
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+    function loadModelInto(container) {
+      const modelPath = container.dataset.model;
+
+      const parseVec3 = (str, def) =>
+        str ? str.split(',').map(Number) : def;
+
+      const cameraPos = parseVec3(container.dataset.camera, [0, 1, 5]);
+      const modelPos = parseVec3(container.dataset.modelPosition, [0, 0, 0]);
+      const modelScale = parseVec3(container.dataset.modelScale, [1, 1, 1]);
+      const spinSpeed = parseFloat(container.dataset.spinSpeed) || 0.01;
+      const lightIntensity = parseFloat(container.dataset.lightIntensity) || 0.8;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        45,
+        container.clientWidth / container.clientHeight,
+        0.1,
+        100
+      );
+      camera.position.set(...cameraPos);
+      camera.lookAt(0, 0, 0);
+
+      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      container.appendChild(renderer.domElement);
+
+      const ambient = new THREE.AmbientLight(0xffffff, 0.6);
+      const directional = new THREE.DirectionalLight(0xffffff, lightIntensity);
+      directional.position.set(5, 10, 7);
+      scene.add(ambient, directional);
+
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.enableZoom = false;
+      controls.enablePan = false;
+
+      let isUserInteracting = false;
+      let spinEnabled = true;
+
+      controls.addEventListener('start', () => {
+        isUserInteracting = true;
+        spinEnabled = false;
+      });
+
+      controls.addEventListener('end', () => {
+        isUserInteracting = false;
+        setTimeout(() => {
+          if (!isUserInteracting) spinEnabled = true;
+        }, 2000);
+      });
+
+      const loader = new GLTFLoader();
+      loader.load(
+        modelPath,
+        (gltf) => {
+          const model = gltf.scene;
+          model.position.set(...modelPos);
+          model.scale.set(...modelScale);
+          scene.add(model);
+
+          let particles = null;
+
+            // Only add particles for the intro rocket model
+            if (modelPath.includes('rocket.glb')) {
+                const particleCount = 200;
+                const positions = new Float32Array(particleCount * 3);  
+
+                for (let i = 0; i < particleCount; i++) {
+                    positions[i * 3] = (Math.random() - .5) * 0.5;
+                    positions[i * 3 + 1] = -1 - Math.random() * 1;
+                    positions[i * 3 + 2] = (Math.random() - 0.1) * 0.5;
+                }
+
+                const particleGeometry = new THREE.BufferGeometry();
+                particleGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+                const particleMaterial = new THREE.PointsMaterial({
+                    color: 0xDF6343,
+                    size: 0.15,
+                    transparent: true,
+                    vertexColors: false,
+                    opacity: 1.0,
+                    depthWrite: false
+                    
+                });
+
+                particles = new THREE.Points(particleGeometry, particleMaterial);
+                particles.position.set(0, 0, -.17); // Offset under the rocket
+                scene.add(particles);
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                if (spinEnabled) model.rotation.y += spinSpeed;
+                controls.update();
+
+                if (particles) {
+                    const pos = particles.geometry.attributes.position.array;
+                    for (let i = 0; i < pos.length; i += 3) {
+                        pos[i + 1] -= 0.05;
+                        if (pos[i + 1] < -2) pos[i + 1] = -1;
+                        let t = (pos[i + 1] + 1) / -0.5; // 0 at top (-1), 1 at bottom (-1.5)
+                        t = Math.min(Math.max(t, 0), 1);
+                    }
+                    particles.geometry.attributes.position.needsUpdate = true;
+                    // Calculate average Y of particles for fade effect
+                    let sumY = 0;
+                    for (let i = 1; i < pos.length; i += 3) {
+                        sumY += pos[i];
+                    }
+                    const avgY = sumY / (pos.length / 3);
+
+                    // Map average Y [-1, -1.5] to opacity [1, 0]
+                    particles.material.opacity = THREE.MathUtils.clamp((avgY + 1) / -0.5, 0, 1);
+                }
+
+                renderer.render(scene, camera);
+            }
+
+            animate();
+
+        },
+        undefined,
+        (error) => {
+          console.error(`Failed to load model from ${modelPath}:`, error);
+        }
+      );
+
+      window.addEventListener('resize', () => {
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+      });
+      // Add ResizeObserver for container
+      const ro = new ResizeObserver(() => {
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+      });
+      ro.observe(container);
+    }
+
+    document.querySelectorAll('.intro-image-container, .portfolio-image-container').forEach(loadModelInto);
+  </script>
+        
+</html>

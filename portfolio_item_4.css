@@ -1,0 +1,249 @@
+/* Import common styles */
+@import url('common.css');
+
+body{
+    grid-template-rows: 
+    auto   /* navbar */
+    auto /* header */
+    repeat(6, minmax(auto, auto)) /* portfolio items */
+    auto; /* footer */
+    
+}
+
+/* header */
+
+header {
+    grid-column: 2 / 3; /* middle column */
+    grid-row: 1 / 2;    /* first row */
+}
+
+/* Hero Section */
+.hero-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    padding: 1%;
+    margin: 1% 0;
+}
+  
+  /* GLB Container */
+  .glb-container {
+    width: 100%;
+    max-width: 500px;
+    height: 40vw;
+    max-height: 400px;
+    min-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 5% 7%;
+    margin: 2rem 0;
+    width: 100%;
+    height: max-content;
+    max-width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.content-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+.content-section ul {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 2rem; /* Adjust the indentation */
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove extra padding */
+}
+
+.content-section ul li {
+  margin-bottom: 0.5rem; /* Add spacing between list items */
+}
+
+.content-section span{
+    font-size: larger;
+    color: var(--primary-color);
+}
+
+
+.content-section span a{
+    color: var(--primary-color);
+}
+
+.content-section blockquote {
+  color: var(--primary-color);
+  text-align: left;
+}
+
+.introduction {
+    grid-column: 2 / 3; /* Middle column */
+    grid-row: 3 / 4; 
+}
+
+.interviews {
+    grid-column: 2 / 3; /* Middle column */
+    grid-row: 4 / 5; 
+}
+
+.empathy {
+    grid-column: 2 / 3; /* Middle column */
+    grid-row: 5 / 6; 
+    text-align: center;
+}
+
+.empathy-container {
+  grid-column: 2 / 3; /* Middle column */
+  grid-row: 6 / 7; 
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow cards to wrap and adjust container height */
+  height: auto; /* Let the height adjust dynamically based on content */
+  overflow: hidden; /* Prevent overflow during animation */
+}
+
+/* Style Guide Cards */
+.empathy-map {
+  position: relative; /* Change from absolute to relative */
+  width: 45%;
+  max-width: 45%;
+  transition: transform 1s ease .25s;
+}
+
+/* Overlapping Effect */
+.empathy-map:nth-child(1) {
+  transform: translateY(0) translateX(50%);
+  z-index: 2;
+}
+
+.empathy-map:nth-child(2) {
+  transform: translateY(0) translateX(-50%);
+  z-index: 1;
+}
+
+/* Active State (Triggered by Scroll) */
+.empathy-container.active .empathy-map:nth-child(1) {
+  transform: translateY(0) translateX(-2%);
+}
+
+.empathy-container.active .empathy-map:nth-child(2) {
+  transform: translateY(0) translateX(2%);
+}
+
+.storyboard {
+    grid-column: 2 / 3; /* Middle column */
+    grid-row: 7 / 8;
+}
+
+.storyboard-container {
+  grid-column: 2 / 3;
+  grid-row: 8 / 9;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#storyboard {
+  width: 50%;
+  height: auto;
+}
+
+/* Footer */
+
+.footer {
+  grid-column: 1 / -1; /* Full width */
+  grid-row: 9 / 10;    /* Last row */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+
+body {
+  grid-template-columns: 2rem auto 2rem; /* left margin, content, right margin */
+  grid-template-rows: 
+    90px   /* navbar */
+    auto /* header */
+    repeat(6, minmax(auto, auto)) /* portfolio items */
+    auto; /* footer */
+}
+
+.hero-section {
+    padding: .5%;
+    margin: 5% 0;
+}
+
+.content-section h2 {
+    font-size: 1rem;
+}
+
+.content-section p {
+    font-size: 0.75rem;
+}
+
+.content-section ul {
+    font-size: .75rem;
+}
+
+.empathy-container {
+  flex-direction: column;
+  height: auto;
+}
+
+.empathy-map {
+  width: 85%;
+  max-width: 100%;
+  position: relative; /* Remove absolute positioning for column layout */
+  margin: 1rem 0; /* Add spacing between cards */
+  transform: none; /* Reset transform for column layout */
+
+}
+
+.empathy-map:nth-child(1),
+.empathy-map:nth-child(2) {
+  z-index: auto; /* Reset z-index for column layout */
+  transform: translateY(0) translateX(0);
+}
+
+.empathy-container.active .empathy-map:nth-child(1),
+.empathy-container.active .empathy-map:nth-child(2) {
+  transform: translateY(0) translateX(0);
+}
+
+#storyboard {
+  width: 90%;
+  height: auto;
+}
+
+}
+
+@media (min-width: 1900px) {
+
+
+  .content-section h2 {
+    font-size: 2.5rem;
+  }
+  
+  .content-section p {
+    font-size: 1.5rem;
+  }
+  
+}
