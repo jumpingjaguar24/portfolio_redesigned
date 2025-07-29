@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9W72GR7DQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-N9W72GR7DQ');
+  </script>
   <script type="text/javascript" src="app.js"></script>
   <script type="text/javascript" src="card_display.js"></script>
   <script type="importmap">
@@ -22,98 +32,104 @@
     }
   </script>
 </head>
+
 <body>
   <!-- Header and Navigation -->
-    <nav id="main-nav">
-        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-list">
-            &#9776;
-        </button>
-        <ul id="nav-list">
-            <li class="name-item">
-                <strong><a class="name" href="#">Joseph Pate</a></strong>
-            </li>
-            <li>
-                <a class="nav-item" href="index.html">work</a>
-            </li>
-            <li>
-                <a class="nav-item" href="about.html">about</a>
-            </li>
-            <li>
-                <a class="nav-item" href="./resume.pdf">resume</a>
-            </li>
-        </ul>
-    </nav>
+  <nav id="main-nav">
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-list">
+      &#9776;
+    </button>
+    <ul id="nav-list">
+      <li class="name-item">
+        <strong><a class="name" href="#">Joseph Pate</a></strong>
+      </li>
+      <li>
+        <a class="nav-item" href="index.html">work</a>
+      </li>
+      <li>
+        <a class="nav-item" href="about.html">about</a>
+      </li>
+      <li>
+        <a class="nav-item" href="./resume.pdf">resume</a>
+      </li>
+    </ul>
+  </nav>
 
   <!-- Main Content -->
-    <!-- Header/Image/GLB Section -->
-    <section class="hero-section">
-      <div 
-       class="glb-container" 
-       data-model="glb/fire_extinguisher.glb" 
-       data-camera="0,1,13"
-       data-model-position="0,-3,0"
-       data-model-scale="1,1,1"
-       data-light-intensity="2.5"
-       data-spin-speed="0.01"
-       aria-label="3D rocket model">
-      </div>
-    </section>
-
-    <!-- Section Blocks -->
-    <section class="content-section introduction">
-        <h2> <span> &#10042; </span> Introduction </h2>
-        <p>
-          This project focused on picking a random object and studying it through a UI/UX lens. My interface of choice was a <span>fire extiguisher</span>. I was drawn to this interface because of the life saving protection that it offers. The interface is a crucial part of being able to protect oneself and therefore has to be clearly understood not only quickly, but also while its user is in distress. I chose the fire extinguisher housed in my apartment building and chose my three roomates as potential users.
-        </p>
-    </section>
-
-    <section class="content-section interviews">
-      <h2><span> &#10162; </span>Interviews</h2>
-      <p> Below is the list of questions I chose to ask the users: </p>
-      <ul>
-        <li><span>&#10122;</span> What qualities do you think are most important for a fire extinguisher?</li>
-        <li><span>&#10123;</span> Look at this fire extinguisher. Have you ever used a fire extinguisher before?</li>
-        <li><span>&#10124; </span> If they haven't used a fire extinguisher before: How intuitive do you think this design is?</li>
-        <li><span>&#10125; </span> If they have: Does the design of this extinguisher seem familiar/reassuring?</li>
-        <li><span>&#10126; </span> Now look at the instruction manual, how useful do you think this is? How useful do you think an instruction manual is in the context of when a fire extinguisher is usually needed?</li>
-        <li><span>&#10127; </span> When grabbing the extinguisher, instinctually, what do you do first?</li>
-        <li><span>&#10128; </span> Circling back to the qualities you thought were most important, how do you think this specific device/interface compared?</li>
-        <li><span>&#10129; </span> What might you do to improve the interface of the fire extinguisher?</li>
-        <li><span>&#10130; </span> Did you notice the PSI gage? If so/if not why is that?</li>
-      </ul>
-    </section>
-
-    <section class="content-section empathy">
-        <h2><span> &#9741; </span> Empathy Maps</h2>
-        <p> Below I have constructed two fictional personas by creating four-quadrant empathy maps, describing what users think, feel, say, and do for an archetypal character ​that represents part of the spectrum of users I observed. Read the diagram below to learn about Careless Carl and Anxious Annie.</p>
-    </section>
-
-    <div class="empathy-container">
-      <img src="persona_images/Empathy_board_1.png" alt="empathy map 1" class="empathy-map">
-      <img src="persona_images/Empathy_board_2.png" alt="empathy map 2" class="empathy-map">
+  <!-- Header/Image/GLB Section -->
+  <section class="hero-section">
+    <div class="glb-container" data-model="glb/fire_extinguisher.glb" data-camera="0,1,13" data-model-position="0,-3,0"
+      data-model-scale="1,1,1" data-light-intensity="2.5" data-spin-speed="0.01" aria-label="3D rocket model">
     </div>
-      
-    <section class="content-section storyboard">
-        <h2><span> &#9787; </span>Storyboard</h2>
-        <p> The final step in my project was to create a<span> storyboard </span>representing one of the personas I created, I chose Careless Carl. The storyboard depicts Carl using a fire extinguisher with a new and improved interface. The new interface gives the fire extinguisher an interactive PSI gage, which I concluded would be useful based on the data I collected.</p>
-    </section>
+  </section>
 
-    <div class="storyboard-container">
-      <img id="storyboard" src="persona_images/Storyboard.png" alt="stoaryboard image">
-    </div>
+  <!-- Section Blocks -->
+  <section class="content-section introduction">
+    <h2> <span> &#10042; </span> Introduction </h2>
+    <p>
+      This project focused on picking a random object and studying it through a UI/UX lens. My interface of choice was a
+      <span>fire extiguisher</span>. I was drawn to this interface because of the life saving protection that it offers.
+      The interface is a crucial part of being able to protect oneself and therefore has to be clearly understood not
+      only quickly, but also while its user is in distress. I chose the fire extinguisher housed in my apartment
+      building and chose my three roomates as potential users.
+    </p>
+  </section>
+
+  <section class="content-section interviews">
+    <h2><span> &#10162; </span>Interviews</h2>
+    <p> Below is the list of questions I chose to ask the users: </p>
+    <ul>
+      <li><span>&#10122;</span> What qualities do you think are most important for a fire extinguisher?</li>
+      <li><span>&#10123;</span> Look at this fire extinguisher. Have you ever used a fire extinguisher before?</li>
+      <li><span>&#10124; </span> If they haven't used a fire extinguisher before: How intuitive do you think this design
+        is?</li>
+      <li><span>&#10125; </span> If they have: Does the design of this extinguisher seem familiar/reassuring?</li>
+      <li><span>&#10126; </span> Now look at the instruction manual, how useful do you think this is? How useful do you
+        think an instruction manual is in the context of when a fire extinguisher is usually needed?</li>
+      <li><span>&#10127; </span> When grabbing the extinguisher, instinctually, what do you do first?</li>
+      <li><span>&#10128; </span> Circling back to the qualities you thought were most important, how do you think this
+        specific device/interface compared?</li>
+      <li><span>&#10129; </span> What might you do to improve the interface of the fire extinguisher?</li>
+      <li><span>&#10130; </span> Did you notice the PSI gage? If so/if not why is that?</li>
+    </ul>
+  </section>
+
+  <section class="content-section empathy">
+    <h2><span> &#9741; </span> Empathy Maps</h2>
+    <p> Below I have constructed two fictional personas by creating four-quadrant empathy maps, describing what users
+      think, feel, say, and do for an archetypal character ​that represents part of the spectrum of users I observed.
+      Read the diagram below to learn about Careless Carl and Anxious Annie.</p>
+  </section>
+
+  <div class="empathy-container">
+    <img src="persona_images/Empathy_board_1.png" alt="empathy map 1" class="empathy-map">
+    <img src="persona_images/Empathy_board_2.png" alt="empathy map 2" class="empathy-map">
+  </div>
+
+  <section class="content-section storyboard">
+    <h2><span> &#9787; </span>Storyboard</h2>
+    <p> The final step in my project was to create a<span> storyboard </span>representing one of the personas I created,
+      I chose Careless Carl. The storyboard depicts Carl using a fire extinguisher with a new and improved interface.
+      The new interface gives the fire extinguisher an interactive PSI gage, which I concluded would be useful based on
+      the data I collected.</p>
+  </section>
+
+  <div class="storyboard-container">
+    <img id="storyboard" src="persona_images/Storyboard.png" alt="stoaryboard image">
+  </div>
 
   <!-- Footer -->
   <nav class="footer">
     <ul class="footer-list">
-        <li class="footer-item">
-            <a class="nav-item" href="#">Back to top</a>
-        </li>
-        <li class="footer-item">
-            <a class="nav-item" href="https://www.linkedin.com/in/joseph-pate-6636461aa/">LinkedIn</a>
-        </li>
-        <li class="footer-item">
-            <a class="nav-item" href="index.html">Homepage</a>
-        </li>
+      <li class="footer-item">
+        <a class="nav-item" href="#">Back to top</a>
+      </li>
+      <li class="footer-item">
+        <a class="nav-item" href="https://www.linkedin.com/in/joseph-pate-6636461aa/">LinkedIn</a>
+      </li>
+      <li class="footer-item">
+        <a class="nav-item" href="index.html">Homepage</a>
+      </li>
     </ul>
     <p id="copyright"> © 2022 by Joseph Pate</p>
   </nav>
@@ -188,4 +204,5 @@
     }
   </script>
 </body>
+
 </html>

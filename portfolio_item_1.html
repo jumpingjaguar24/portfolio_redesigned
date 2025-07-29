@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9W72GR7DQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-N9W72GR7DQ');
+  </script>
   <script type="text/javascript" src="app.js"></script>
   <script type="text/javascript" src="card_display.js"></script>
   <script type="importmap">
@@ -22,100 +32,110 @@
     }
   </script>
 </head>
+
 <body>
   <!-- Header and Navigation -->
-    <nav id="main-nav">
-        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-list">
-            &#9776;
-        </button>
-        <ul id="nav-list">
-            <li class="name-item">
-                <strong><a class="name" href="#">Joseph Pate</a></strong>
-            </li>
-            <li>
-                <a class="nav-item" href="index.html">work</a>
-            </li>
-            <li>
-                <a class="nav-item" href="about.html">about</a>
-            </li>
-            <li>
-                <a class="nav-item" href="./resume.pdf">resume</a>
-            </li>
-        </ul>
-    </nav>
+  <nav id="main-nav">
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-list">
+      &#9776;
+    </button>
+    <ul id="nav-list">
+      <li class="name-item">
+        <strong><a class="name" href="#">Joseph Pate</a></strong>
+      </li>
+      <li>
+        <a class="nav-item" href="index.html">work</a>
+      </li>
+      <li>
+        <a class="nav-item" href="about.html">about</a>
+      </li>
+      <li>
+        <a class="nav-item" href="./resume.pdf">resume</a>
+      </li>
+    </ul>
+  </nav>
 
   <!-- Main Content -->
-    <!-- Header/Image/GLB Section -->
-    <section class="hero-section">
-        <div 
-        class="glb-container" 
-        data-model="glb/laptop.glb" 
-        data-camera="0,5,25"
-        data-model-position="0,-6,0"
-        data-model-scale="1,1,1"
-        data-light-intensity="5"
-        data-spin-speed="0.01"
-        aria-label="3D fire extinguisher model">
+  <!-- Header/Image/GLB Section -->
+  <section class="hero-section">
+    <div class="glb-container" data-model="glb/laptop.glb" data-camera="0,5,25" data-model-position="0,-6,0"
+      data-model-scale="1,1,1" data-light-intensity="5" data-spin-speed="0.01" aria-label="3D fire extinguisher model">
     </div>
-    </section>
+  </section>
 
-    <!-- Section Blocks -->
-    <section class="content-section intro">
-        <h2> <span> &#9761; </span> Redesigning the NCWS Site </h2>
-      </div>
-      <p>
-        <span>The Client: </span>  <br><br> The Nursing Council on Workforce Sustainability aims to address nusring workforce challenges in Massachusetts.
-        As a contractor hired by the NCWS, I was tasked with redesigning their website to better serve their mission and improve user experience.
-        <br><br>
-        <span>The Product: </span>  <br><br> The redesigned website needed a modern, user-friendly interface that would enhance accessibility and engagement. 
-        <br><br> 
-        <span>Obstacles: </span>  <br><br> It's umbrella organization, ForHealth Consulting, needed the website and its components to be 
-        <ul>
-            <li><span>&#10122;</span> Easily editable by non-technical staff</li>
-            <li><span>&#10123; </span>Easily maintainable</li>
-            <li><span>&#10124; </span>Reusable components that could be effortlessly integrated into other ForHealth Consulting websites</li>
-        </ul>
-        
-      </p>
-    </section>
-
-    <section class="content-section style-guide">
-      <h2><span> &#8618; </span> Developing a  Style Guide</h2>
-      <p>After communicating with the client, understanding their needs and vision for a redesigned site, I created a style guide and presented it as a powerpoint to my team. Below are a few slides from this powerpoint.</p>
-    </section>
-
-    <div class="style-guide-display">
-        <img src="ncws_images/style_guide_1.jpg" alt="Style Guide Slide 1" class="style-guide-card">
-        <img src="ncws_images/style_guide_2.jpg" alt="Style Guide Slide 2" class="style-guide-card">
-        <img src="ncws_images/style_guide_3.jpg" alt="Style Guide Slide 3" class="style-guide-card">
-        <img src="ncws_images/style_guide_4.jpg" alt="Style Guide Slide 4" class="style-guide-card">
+  <!-- Section Blocks -->
+  <section class="content-section intro">
+    <h2> <span> &#9761; </span> Redesigning the NCWS Site </h2>
     </div>
+    <p>
+      <span>The Client: </span> <br><br> The Nursing Council on Workforce Sustainability aims to address nusring
+      workforce challenges in Massachusetts.
+      As a contractor hired by the NCWS, I was tasked with redesigning their website to better serve their mission and
+      improve user experience.
+      <br><br>
+      <span>The Product: </span> <br><br> The redesigned website needed a modern, user-friendly interface that would
+      enhance accessibility and engagement.
+      <br><br>
+      <span>Obstacles: </span> <br><br> It's umbrella organization, ForHealth Consulting, needed the website and its
+      components to be
+    <ul>
+      <li><span>&#10122;</span> Easily editable by non-technical staff</li>
+      <li><span>&#10123; </span>Easily maintainable</li>
+      <li><span>&#10124; </span>Reusable components that could be effortlessly integrated into other ForHealth
+        Consulting websites</li>
+    </ul>
 
-    <section class="content-section hifi">
-        <h2><span> &#8527; </span>Hi-fi Prototypes</h2>
-        <p>After confirming that the client was satisfied with the results of the style guide, the next step was to create a fully functional <span> high-fidelity prototype </span>of the site. Using Figma, I designed prototypes for both <span> web and mobile </span> applications, ensuring the design was consistent and user-friendly across all platforms. These prototypes served as a blueprint for the development phase, allowing the client to visualize the final product before implementation.</p>
-    </section>
+    </p>
+  </section>
 
-    <iframe class="figma-prototype" src="https://embed.figma.com/proto/Upqx9Zc4jRhHqvHLq1lwau/Joseph-Pate-s-team-library?node-id=2391-70&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2391%3A70&embed-host=share" allowfullscreen></iframe>
-      
-    <section class="content-section analysis">
-        <h2><span> &#10003; </span>Development and UAT</h2>
-        <p> With the hifi prototypes approved, the next step was to build the site and its components. The development process involved integrating the design into the content management system (Optimizely) and populating the site with content. Once the site was built, User Acceptance Testing (UAT) was conducted to ensure the site adhered to <span>WCAG 2.1 AA accessibility </span>standards and was fully functional. This phase was critical in identifying and resolving any issues, ensuring the final product met both client expectations and industry standards.</p><br>
-        <p>View the live site here :  <span><a href="https://www.ncwsma.org/">https://www.ncwsma.org/</a></span></p>
-    </section>
+  <section class="content-section style-guide">
+    <h2><span> &#8618; </span> Developing a Style Guide</h2>
+    <p>After communicating with the client, understanding their needs and vision for a redesigned site, I created a
+      style guide and presented it as a powerpoint to my team. Below are a few slides from this powerpoint.</p>
+  </section>
+
+  <div class="style-guide-display">
+    <img src="ncws_images/style_guide_1.jpg" alt="Style Guide Slide 1" class="style-guide-card">
+    <img src="ncws_images/style_guide_2.jpg" alt="Style Guide Slide 2" class="style-guide-card">
+    <img src="ncws_images/style_guide_3.jpg" alt="Style Guide Slide 3" class="style-guide-card">
+    <img src="ncws_images/style_guide_4.jpg" alt="Style Guide Slide 4" class="style-guide-card">
+  </div>
+
+  <section class="content-section hifi">
+    <h2><span> &#8527; </span>Hi-fi Prototypes</h2>
+    <p>After confirming that the client was satisfied with the results of the style guide, the next step was to create a
+      fully functional <span> high-fidelity prototype </span>of the site. Using Figma, I designed prototypes for both
+      <span> web and mobile </span> applications, ensuring the design was consistent and user-friendly across all
+      platforms. These prototypes served as a blueprint for the development phase, allowing the client to visualize the
+      final product before implementation.</p>
+  </section>
+
+  <iframe class="figma-prototype"
+    src="https://embed.figma.com/proto/Upqx9Zc4jRhHqvHLq1lwau/Joseph-Pate-s-team-library?node-id=2391-70&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2391%3A70&embed-host=share"
+    allowfullscreen></iframe>
+
+  <section class="content-section analysis">
+    <h2><span> &#10003; </span>Development and UAT</h2>
+    <p> With the hifi prototypes approved, the next step was to build the site and its components. The development
+      process involved integrating the design into the content management system (Optimizely) and populating the site
+      with content. Once the site was built, User Acceptance Testing (UAT) was conducted to ensure the site adhered to
+      <span>WCAG 2.1 AA accessibility </span>standards and was fully functional. This phase was critical in identifying
+      and resolving any issues, ensuring the final product met both client expectations and industry standards.</p><br>
+    <p>View the live site here : <span><a href="https://www.ncwsma.org/">https://www.ncwsma.org/</a></span></p>
+  </section>
 
   <!-- Footer -->
   <nav class="footer">
     <ul class="footer-list">
-        <li class="footer-item">
-            <a class="nav-item" href="#">Back to top</a>
-        </li>
-        <li class="footer-item">
-            <a class="nav-item" href="https://www.linkedin.com/in/joseph-pate-6636461aa/">LinkedIn</a>
-        </li>
-        <li class="footer-item">
-          <a class="nav-item" href="index.html">Homepage</a>
-        </li>
+      <li class="footer-item">
+        <a class="nav-item" href="#">Back to top</a>
+      </li>
+      <li class="footer-item">
+        <a class="nav-item" href="https://www.linkedin.com/in/joseph-pate-6636461aa/">LinkedIn</a>
+      </li>
+      <li class="footer-item">
+        <a class="nav-item" href="index.html">Homepage</a>
+      </li>
     </ul>
     <p id="copyright"> © 2022 by Joseph Pate</p>
   </nav>
@@ -190,4 +210,5 @@
     }
   </script>
 </body>
+
 </html>
